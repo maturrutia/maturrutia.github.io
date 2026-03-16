@@ -1,0 +1,36 @@
+<section class="education section" id="education">
+  <div class="container">
+    <h2 class="section-title">Education & Certifications</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <h3 class="education-title">{{ site.data.resume.education.degree }}</h3>
+        <p class="education-institution">{{ site.data.resume.education.institution }}</p>
+        <p class="education-location">{{ site.data.resume.education.location }}</p>
+      </div>
+      
+      <div class="certifications-card">
+        <div class="certifications-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+        </div>
+        <h3 class="certifications-title">Certifications</h3>
+        <div class="certification-list">
+          {% for cert in site.data.resume.certifications %}
+          <div class="certification-item">
+            <span class="certification-name">{{ cert.name }}</span>
+            <span class="certification-year">{{ cert.year }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

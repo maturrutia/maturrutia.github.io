@@ -1,0 +1,164 @@
+// Mobile First - Base styles are for mobile
+// Tablet and up
+@media (min-width: $tablet) {
+  .hero-name {
+    font-size: 4.5rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: row;
+  }
+  
+  .nav-menu {
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .nav-list {
+    flex-direction: row;
+  }
+  
+  .section {
+    padding: 5rem 0;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+// Desktop and up
+@media (min-width: $desktop) {
+  .hero-name {
+    font-size: 5.5rem;
+  }
+  
+  .section {
+    padding: 6rem 0;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Wide screens
+@media (min-width: $wide) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .hero-name {
+    font-size: 6rem;
+  }
+}
+
+// Tablet landscape
+@media (min-width: $tablet) and (max-width: $desktop - 1px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Mobile landscape
+@media (max-width: $tablet - 1px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 8rem 0 4rem;
+  }
+  
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+// Small mobile
+@media (max-width: 400px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Print styles
+@media print {
+  .header,
+  .scroll-indicator,
+  .hero-canvas,
+  .footer,
+  .theme-toggle,
+  .nav-toggle {
+    display: none;
+  }
+  
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  .section {
+    padding: 2rem 0;
+    page-break-inside: avoid;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+// High contrast mode
+@media (prefers-contrast: high) {
+  .glass-card,
+  .contact-card,
+  .skill-category,
+  .timeline-content {
+    border-width: 2px;
+  }
+  
+  .btn {
+    border-width: 3px;
+  }
+}
+
+// Dark mode preference
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+  }
+}
+
+// Light mode preference
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+  }
+}

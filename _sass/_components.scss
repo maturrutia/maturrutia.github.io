@@ -1,0 +1,180 @@
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-sm $spacing-lg;
+  font-family: $font-heading;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: $radius-lg;
+  cursor: pointer;
+  transition: all $transition-base;
+  border: 2px solid transparent;
+  text-decoration: none;
+  
+  &-primary {
+    background: var(--gradient);
+    color: white;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 217, 255, 0.3);
+    }
+  }
+  
+  &-secondary {
+    background: transparent;
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    
+    &:hover {
+      background: var(--accent-cyan);
+      color: white;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Glass Card
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: $radius-xl;
+  padding: $spacing-lg;
+  transition: all $transition-base;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-cyan);
+  }
+}
+
+// Timeline
+.timeline {
+  position: relative;
+  padding-left: $spacing-lg;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--gradient);
+  }
+  
+  @media (min-width: $tablet) {
+    padding-left: $spacing-xl;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: $spacing-xl;
+  
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -$spacing-lg;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent-cyan);
+  z-index: 1;
+  
+  @media (min-width: $tablet) {
+    left: -$spacing-xl;
+  }
+  
+  .timeline-item.current & {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 0 6px rgba(0, 217, 255, 0.2);
+  }
+}
+
+.timeline-content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  transition: all $transition-base;
+  
+  &:hover {
+    border-color: var(--accent-cyan);
+    transform: translateX(4px);
+  }
+}
+
+// Skill Tags
+.skill-tag {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: $radius-md;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: $spacing-xs;
+  transition: all $transition-fast;
+  
+  &:hover {
+    background: var(--gradient);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+  }
+}
+
+// Card Grid
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-lg;
+  
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Badge
+.timeline-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  background: var(--gradient);
+  color: white;
+  border-radius: $radius-lg;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// Icon Container
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: $radius-lg;
+  background: var(--gradient);
+  color: white;
+  flex-shrink: 0;
+}

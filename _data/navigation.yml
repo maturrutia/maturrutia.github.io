@@ -1,0 +1,11 @@
+items:
+  - name: About
+    url: "#about"
+  - name: Skills
+    url: "#skills"
+  - name: Experience
+    url: "#experience"
+  - name: Education
+    url: "#education"
+  - name: Contact
+    url: "#contact"

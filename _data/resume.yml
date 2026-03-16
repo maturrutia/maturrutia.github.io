@@ -1,0 +1,59 @@
+name: Mateo Urrutia
+title: Security Engineer
+location: Portland, OR
+phone: (971) 319-1105
+email: mateo.urrutia@proton.me
+website: maturrutia.github.io
+github: maturrutia
+relocation: true
+
+tagline: 9+ years protecting systems | DevSecOps | SIEM & Detection
+
+summary: |
+  Security engineer with 9+ years of experience across network engineering, DevSecOps, and enterprise security operations. Experience with SIEM operations, EDR/XDR, firewall management, AWS security controls, vulnerability management, and automation improving detection and response capabilities.
+
+experience:
+  - role: Security Engineer
+    company: Lumovy Technology Solutions
+    location: Portland, OR
+    period: 2023 - Present
+    current: true
+    highlights:
+      - Operate SIEM detection pipelines and develop alert rules supporting incident response.
+      - Administer EDR/XDR tools and integrate endpoint telemetry with centralized logging.
+      - Implement firewall policies and segmentation to reduce attack surface.
+      - Automate alert enrichment and vulnerability remediation workflows.
+  
+  - role: DevSecOps Engineer
+    company: Effectual
+    location: Portland, OR
+    period: 2018 - 2023
+    current: false
+    highlights:
+      - Integrated SAST, DAST, and dependency scanning into CI/CD pipelines.
+      - Implemented AWS security controls including IAM hardening, CloudTrail logging, and monitoring.
+      - Led vulnerability remediation coordination with engineering teams.
+      - Developed infrastructure-as-code templates with security guardrails.
+  
+  - role: Network Engineer
+    company: University of South Florida
+    location: Tampa, FL
+    period: 2014 - 2018
+    current: false
+    highlights:
+      - Maintained enterprise network infrastructure including routing, switching, and firewalls.
+      - Improved monitoring and access control across campus systems.
+      - Supported incident investigations and network troubleshooting.
+
+education:
+  degree: Bachelor of Science in Information Technology
+  institution: University of South Florida
+  location: Tampa, FL
+
+certifications:
+  - name: AWS Security Specialty
+    year: 2021
+    active: true
+  - name: CompTIA Security+
+    year: 2015
+    active: true

@@ -1,0 +1,26 @@
+categories:
+  - name: Security & Detection
+    icon: shield-check
+    skills:
+      - SIEM & Detection Engineering
+      - EDR/XDR
+      - Incident Response
+      - Vulnerability Management
+      - Firewall & IDS/IPS Management
+  
+  - name: Cloud & DevSecOps
+    icon: cloud-lock
+    skills:
+      - AWS Security
+      - CI/CD Security
+      - SAST/DAST Integration
+      - Infrastructure as Code
+      - IAM Hardening
+  
+  - name: Automation & Tools
+    icon: code-brackets
+    skills:
+      - Python/Bash Automation
+      - Linux Administration
+      - Networking (TCP/IP, DNS)
+      - CloudTrail & Monitoring

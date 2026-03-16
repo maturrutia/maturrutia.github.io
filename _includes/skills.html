@@ -1,0 +1,34 @@
+<section class="skills section" id="skills">
+  <div class="container">
+    <h2 class="section-title">Core Skills</h2>
+    <div class="skills-grid">
+      {% for category in site.data.skills.categories %}
+      <div class="skill-category">
+        <div class="skill-category-header">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              {% if category.icon == 'shield-check' %}
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+              {% elsif category.icon == 'cloud-lock' %}
+              <path d="M18 8h-1a5 5 0 0 0-10 0H6a4 4 0 0 0 0 8h12a4 4 0 0 0 0-8z"></path>
+              <rect x="10" y="14" width="4" height="5" rx="1"></rect>
+              <path d="M12 14v-2"></path>
+              {% elsif category.icon == 'code-brackets' %}
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+              {% endif %}
+            </svg>
+          </div>
+          <h3 class="skill-category-name">{{ category.name }}</h3>
+        </div>
+        <div class="skill-tags">
+          {% for skill in category.skills %}
+          <span class="skill-tag">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

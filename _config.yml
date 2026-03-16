@@ -1,0 +1,27 @@
+title: Mateo Urrutia | Security Engineer
+email: mateo.urrutia@proton.me
+description: Security engineer with 9+ years of experience in SIEM, DevSecOps, and enterprise security operations
+url: "https://maturrutia.github.io"
+github_username: maturrutia
+
+# Build settings
+theme: null
+markdown: kramdown
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Collections & defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude files from build
+exclude:
+  - resume.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
